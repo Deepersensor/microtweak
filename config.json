@@ -1,0 +1,38 @@
+{
+  "name": "MicroTweak",
+  "version": "1.0.0",
+  "description": "low level AI voice module",
+  "platforms": [
+    "mobile",
+    "android",
+    "web",
+    "browser_extension",
+    "desktop"
+  ],
+  "features": {
+    "voice_tweaking": true,
+    "noise_reduction": true,
+    "echo_cancellation": true,
+    "gain_control": true
+  },
+  "dependencies": {
+    "rust_version": ">=1.50.0",
+    "libraries": [
+      "portaudio",
+      "wasm-bindgen",
+      "web-sys",
+      "serde",
+      "serde_json"
+    ]
+  },
+  "build": {
+    "targets": [
+      "x86_64-unknown-linux-gnu",
+      "x86_64-apple-darwin",
+      "x86_64-pc-windows-msvc",
+      "wasm32-unknown-unknown",
+      "aarch64-linux-android",
+      "aarch64-apple-ios"
+    ]
+  }
+}
